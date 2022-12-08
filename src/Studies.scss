@@ -1,0 +1,22 @@
+.studies {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: $dark-color;
+    color: $white;
+    font-family: $rubik;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    &-txt {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
