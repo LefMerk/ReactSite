@@ -15,7 +15,9 @@ $white: #ffffff;
 
 @import 'Menu', 
         'About',
-        'Studies';
+        'Studies',
+        'Projects',
+        'Find';
 
 html { 
   scroll-behavior: smooth;
@@ -38,9 +40,28 @@ body {
   grid-column-gap: 50px;
   grid-row-gap: 20px;
   padding: 50px;
-  background: rgb(3,35,50);
-  background: -moz-linear-gradient(305deg, rgba(3,35,50,1) 13%, rgba(9,68,95,1) 72%, rgba(190,245,45,1) 100%);
-  background: -webkit-linear-gradient(305deg, rgba(3,35,50,1) 13%, rgba(9,68,95,1) 72%, rgba(190,245,45,1) 100%);
-  background: linear-gradient(305deg, rgba(3,35,50,1) 13%, rgba(9,68,95,1) 72%, rgba(190,245,45,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#032332",endColorstr="#bef52d",GradientType=1);
+  background: rgb(190,245,45);
+  background: -moz-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  background: -webkit-linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  background: linear-gradient(319deg, rgba(190,245,45,1) 0%, rgba(9,68,95,1) 13%, rgba(3,35,50,1) 50%, rgba(9,68,95,1) 70%, rgba(190,245,45,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bef52d",endColorstr="#bef52d",GradientType=1);
+  scrollbar-width: thin;
+  scrollbar-color: #0A4C95 #C2D2E4;
+}
+
+//custom scrollbar
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: $light-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $light-hover-color;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px $dark-color;
+}
+
+::-webkit-scrollbar-corner {
+  background: $light-color;
 }

@@ -4,6 +4,8 @@ import './index.scss';
 import Menu from './Menu';
 import About from './About';
 import Studies from './Studies';
+import Projects from './Projects';
+import Find from './Find';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,8 @@ root.render(
     <Menu />
     <About />
     <Studies />
+    <Projects />
+    <Find />
   </React.StrictMode>
 );
 
